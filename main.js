@@ -12,7 +12,7 @@ recognition.onresult = function run(event){
     speak();
 }
 function speak(){
-    var synth = window.speedSynthesis;
+    var synth = window.speechSynthesis;
     speak_data = document.getElementById("textbox").value;
     var utterThis = new SpeechSynthesisUtterance(speak_data);
     synth.speak(utterThis);
